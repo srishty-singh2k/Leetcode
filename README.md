@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/srishty-singh2k/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0036-valid-sudoku](https://github.com/srishty-singh2k/Leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/srishty-singh2k/Leetcode/tree/main/0049-group-anagrams/) | Medium |
+| [0078-subsets](https://github.com/srishty-singh2k/Leetcode/tree/main/0078-subsets/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/srishty-singh2k/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/srishty-singh2k/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/srishty-singh2k/Leetcode/tree/master/0238-product-of-array-except-self) |
@@ -76,4 +77,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1929-concatenation-of-array](https://github.com/srishty-singh2k/Leetcode/tree/master/1929-concatenation-of-array) |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0078-subsets](https://github.com/srishty-singh2k/Leetcode/tree/main/0078-subsets/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0078-subsets](https://github.com/srishty-singh2k/Leetcode/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
