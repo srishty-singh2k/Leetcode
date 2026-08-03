@@ -1,5 +1,6 @@
 class Solution(object):
     def isPalindrome(self, s):
+        #TC=O(n) SC=O(1)
         l=0
         r=len(s)-1
         while(l<=r):
@@ -16,3 +17,7 @@ class Solution(object):
             else:
                 return False
         return True
+
+        #TC=O(3n) SC=O(2n)
+        #filtered = [c.lower() for c in s if c.isalpha() or c.isdigit()]
+        #return filtered == filtered[::-1]
