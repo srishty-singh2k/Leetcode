@@ -1,5 +1,6 @@
 class Solution(object):
     def twoSum(self, numbers, target):
+        #TC=O(n) SC=O(1)
         l= 0
         r = len(numbers)-1
         while(l<r):
@@ -12,3 +13,6 @@ class Solution(object):
                 l+=1
 
         return l+1,r+1
+
+        # using dict as unsorted array
+        #TC=O(n) SC=O(n)
