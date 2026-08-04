@@ -10,10 +10,13 @@ class Solution(object):
             r=len(nums)-1
             while(l<r):
                 if nums[l]+nums[r]+nums[i]==0:
-                    if [nums[i],nums[l],nums[r]] not in res:
-                        res.append([nums[i],nums[l],nums[r]])
+                    res.append([nums[i],nums[l],nums[r]])
                     l+=1
+                    while l<r and nums[l]==nums[l-1]:
+                        l+=1
                     r-=1
+                    while r>l and nums[r] ==nums[r+1]:
+                        r-=1
                 elif nums[l]+nums[r]+nums[i] <0:
                     l+=1
                 else:
