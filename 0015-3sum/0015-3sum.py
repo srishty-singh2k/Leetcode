@@ -1,6 +1,6 @@
 class Solution(object):
     def threeSum(self, nums):
-        # TC=O(nlogn + n^2 + n^2)  SC=O(1)
+        # TC=O(nlogn + n^2)  SC=O(1)
         nums.sort()
         res=[]
         for i in range(len(nums)):
@@ -10,12 +10,13 @@ class Solution(object):
             r=len(nums)-1
             while(l<r):
                 if nums[l]+nums[r]+nums[i]==0:
-                    res.append((nums[i],nums[l],nums[r]))
+                    if [nums[i],nums[l],nums[r]] not in res:
+                        res.append([nums[i],nums[l],nums[r]])
                     l+=1
                     r-=1
                 elif nums[l]+nums[r]+nums[i] <0:
                     l+=1
                 else:
                     r-=1
-        return [list(r) for r in set(res)]
+        return res
         
