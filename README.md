@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/srishty-singh2k/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0049-group-anagrams](https://github.com/srishty-singh2k/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0078-subsets](https://github.com/srishty-singh2k/Leetcode/tree/main/0078-subsets/) | Medium |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/srishty-singh2k/Leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/srishty-singh2k/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/srishty-singh2k/Leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0217-contains-duplicate](https://github.com/srishty-singh2k/Leetcode/tree/master/0217-contains-duplicate) |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/srishty-singh2k/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/srishty-singh2k/Leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
