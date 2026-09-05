@@ -8,29 +8,27 @@ class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         res = []
         # Iterative
-        stk = []
-        node = root
-        while(True):
-            if node:
-                stk.append(node)
-                node = node.left
-            else:
-                if not stk:
-                    break
-                node = stk.pop()
-                res.append(node.val)
-                node = node.right
-        return res
+        # stk = []
+        # node = root
+        # while(True):
+        #     if node:
+        #         stk.append(node)
+        #         node = node.left
+        #     else:
+        #         if not stk:
+        #             break
+        #         node = stk.pop()
+        #         res.append(node.val)
+        #         node = node.right
+        # return res
 
         # Recursive
-        # def inorder(node):
-        #     if not node:
-        #         return
-        #     if node.left:
-        #         inorder(node.left)
-        #     res.append(node.val)
-        #     if node.right:
-        #         inorder(node.right)
-        # inorder(root)
-        # return res
+        def inorder(node):
+            if not node:
+                return
+            inorder(node.left)
+            res.append(node.val)
+            inorder(node.right)
+        inorder(root)
+        return res
 
