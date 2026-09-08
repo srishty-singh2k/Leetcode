@@ -1,26 +1,39 @@
 class Solution(object):
     def longestConsecutive(self, nums):
-        #O(n log n)
-        nums.sort()
-        maxLen = 0
-        for i in range(len(nums)-1):
-            if nums[i+1] == 1+nums[i]:
-                currLen = 1
-                while nums[i+1] == 1+nums[i]:
-                    currLen += 1
-                    i+=1
-                maxLen = max(maxLen, currLen)
-        return maxLen
-                
-        # O(n)
-        # maxLen = 0
-        # sett = set(nums)
-        # for n in sett:
-        #     if n-1 not in sett:
-        #         currLen = 1
-        #         start = n
-        #         while start+1 in sett:
-        #             currLen +=1
-        #             start += 1
-        #         maxLen = max(maxLen, currLen)
-        # return maxLen
+        # SET W/O Repeated checks TC=O(n) SC=O(n) ---> TLE 81/85
+        s = set(nums)
+        maxSeq = 0
+        for n in list(s):
+            if n-1 not in s:
+                seq = 1
+                while (n+1 in s):
+                    seq+=1
+                    n +=1
+                maxSeq = max(maxSeq, seq)
+        return maxSeq
+
+        # SORTING TC=O(n logn) SC=O(n)
+        # nums=list(set(nums))
+        # nums.sort()
+        # maxSeq = 0 if len(nums)==0 else 1
+        # i=0
+        # seq=1
+        # while(i<len(nums)-1):
+        #     if nums[i]+1 == nums[i+1]:
+        #         seq+=1
+        #     else:
+        #         seq=1
+        #     i+=1
+        #     maxSeq = max(maxSeq,seq)
+        # return maxSeq
+
+        # SET TC=O(n^2) SC=O(n)   ----> TLE 74/85
+        # s = set(nums)
+        # maxSeq = 0
+        # for n in nums:
+        #     seq = 1
+        #     while (n+1 in s):
+        #         seq+=1
+        #         n +=1
+        #     maxSeq = max(maxSeq, seq)
+        # return maxSeq
