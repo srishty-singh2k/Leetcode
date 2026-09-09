@@ -1,5 +1,5 @@
 class Solution:
-    def trap(self, height: List[int]) -> int:
+    def trap(self, height: List[int]) -> int:      
         # PREFIX-SUFFIX TC=O(n) SC=O(1)/O(n)ifPrecomputeBoth
         maxL=[0]
         for i in range(len(height)-1):
@@ -10,8 +10,8 @@ class Solution:
             water += min(maxL[i],maxR)-height[i] if (min(maxL[i],maxR)>height[i]) else 0
             maxR=max(maxR,height[i])
         return water
-
         
+
         # TWO-POINTERS TC=O(n) SC=O(1)
         # if len(height)<=2:
         #     return 0
@@ -30,3 +30,6 @@ class Solution:
         #         water += (maxR-height[r]) if (maxR>height[r]) else 0 
         #         maxR = max(maxR,height[r])
         # return water
+
+
+        # STACK TC=O(n) SC=O(1)
